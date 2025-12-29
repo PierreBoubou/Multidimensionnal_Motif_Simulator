@@ -1232,7 +1232,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
         save_filename = st.text_input("Filename (without extension)", "motif_dataset.pkl")
         
         st.download_button('💾 Download Dataset',
-                           data=pickle.dump(serialize_simulator(st.session_state.simulator)),
+                           data=pickle.dumps(serialize_simulator(st.session_state.simulator)),  # dumps with's' dont require file and is just serialized object
                            file_name = save_filename if save_filename.endswith('.pkl') else f"{save_filename}.pkl"
 
                            )
