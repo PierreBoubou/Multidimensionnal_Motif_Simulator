@@ -776,7 +776,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_text = st.text_input("Min/Fixed Frequency", "0.05", key="param_morlet_freq_min")
                         try:
                             freq_min = float(freq_text)
-                            freq_min = max(0.01, min(0.45, freq_min))
+                            # freq_min = max(0.01, min(0.45, freq_min))
                         except:
                             freq_min = 0.05
                     
@@ -784,7 +784,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_max_text = st.text_input("Max Frequency", "0.05", key="param_morlet_freq_max")
                         try:
                             freq_max = float(freq_max_text)
-                            freq_max = max(0.01, min(0.45, freq_max))
+                            # freq_max = max(0.01, min(0.45, freq_max))
                         except:
                             freq_max = freq_min
                         freq_max = max(freq_min, freq_max)
@@ -797,7 +797,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         sigma_text = st.text_input("Min/Fixed Sigma", "10.0", key="param_morlet_sigma_min")
                         try:
                             sigma_min = float(sigma_text)
-                            sigma_min = max(0.5, sigma_min)
+                            # sigma_min = max(0.5, sigma_min)
                         except:
                             sigma_min = 10.0
                     
@@ -805,7 +805,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         sigma_max_text = st.text_input("Max Sigma", "10.0", key="param_morlet_sigma_max")
                         try:
                             sigma_max = float(sigma_max_text)
-                            sigma_max = max(0.5, sigma_max)
+                            # sigma_max = max(0.5, sigma_max)
                         except:
                             sigma_max = sigma_min
                         sigma_max = max(sigma_min, sigma_max)
@@ -819,7 +819,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_text = st.text_input("Min/Fixed Frequency", "1.0", key="param_sine_freq_min")
                         try:
                             freq_min = float(freq_text)
-                            freq_min = max(0.01, min(10.0, freq_min))
+                            # freq_min = max(0.01, min(10.0, freq_min))
                         except:
                             freq_min = 1.0
                     
@@ -827,7 +827,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_max_text = st.text_input("Max Frequency", "1.0", key="param_sine_freq_max")
                         try:
                             freq_max = float(freq_max_text)
-                            freq_max = max(0.01, min(10.0, freq_max))
+                            # freq_max = max(0.01, min(10.0, freq_max))
                         except:
                             freq_max = freq_min
                         freq_max = max(freq_min, freq_max)
@@ -841,7 +841,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         duty_text = st.text_input("Min/Fixed Duty Cycle (0-1)", "0.5", key="param_square_duty_min")
                         try:
                             duty_min = float(duty_text)
-                            duty_min = max(0.01, min(0.99, duty_min))
+                            # duty_min = max(0.01, min(0.99, duty_min))
                         except:
                             duty_min = 0.5
                     
@@ -849,7 +849,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         duty_max_text = st.text_input("Max Duty Cycle (0-1)", "0.5", key="param_square_duty_max")
                         try:
                             duty_max = float(duty_max_text)
-                            duty_max = max(0.01, min(0.99, duty_max))
+                            # duty_max = max(0.01, min(0.99, duty_max))
                         except:
                             duty_max = duty_min
                         duty_max = max(duty_min, duty_max)
@@ -863,7 +863,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         rise_text = st.text_input("Min/Fixed Rise Tau", "10.0", key="param_exp_rise_min")
                         try:
                             rise_min = float(rise_text)
-                            rise_min = max(0.5, rise_min)
+                            # rise_min = max(0.5, rise_min)
                         except:
                             rise_min = 10.0
                     
@@ -871,7 +871,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         rise_max_text = st.text_input("Max Rise Tau", "10.0", key="param_exp_rise_max")
                         try:
                             rise_max = float(rise_max_text)
-                            rise_max = max(0.5, rise_max)
+                            # rise_max = max(0.5, rise_max)
                         except:
                             rise_max = rise_min
                         rise_max = max(rise_min, rise_max)
@@ -884,7 +884,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         decay_text = st.text_input("Min/Fixed Decay Tau", "20.0", key="param_exp_decay_min")
                         try:
                             decay_min = float(decay_text)
-                            decay_min = max(0.5, decay_min)
+                            # decay_min = max(0.5, decay_min)
                         except:
                             decay_min = 20.0
                     
@@ -892,7 +892,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         decay_max_text = st.text_input("Max Decay Tau", "20.0", key="param_exp_decay_max")
                         try:
                             decay_max = float(decay_max_text)
-                            decay_max = max(0.5, decay_max)
+                            # decay_max = max(0.5, decay_max)
                         except:
                             decay_max = decay_min
                         decay_max = max(decay_min, decay_max)
@@ -906,7 +906,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_text = st.text_input("Min/Fixed Frequency", "0.05", key="param_damp_freq_min")
                         try:
                             freq_min = float(freq_text)
-                            freq_min = max(0.01, min(0.45, freq_min))
+                            # freq_min = max(0.01, min(0.45, freq_min))
                         except:
                             freq_min = 0.05
                     
@@ -914,7 +914,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         freq_max_text = st.text_input("Max Frequency", "0.05", key="param_damp_freq_max")
                         try:
                             freq_max = float(freq_max_text)
-                            freq_max = max(0.01, min(0.45, freq_max))
+                            # freq_max = max(0.01, min(0.45, freq_max))
                         except:
                             freq_max = freq_min
                         freq_max = max(freq_min, freq_max)
@@ -927,7 +927,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         damp_text = st.text_input("Min/Fixed Damping", "0.05", key="param_damp_damp_min")
                         try:
                             damp_min = float(damp_text)
-                            damp_min = max(0.01, damp_min)
+                            # damp_min = max(0.01, damp_min)
                         except:
                             damp_min = 0.05
                     
@@ -935,7 +935,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                         damp_max_text = st.text_input("Max Damping", "0.05", key="param_damp_damp_max")
                         try:
                             damp_max = float(damp_max_text)
-                            damp_max = max(0.01, damp_max)
+                            # damp_max = max(0.01, damp_max)
                         except:
                             damp_max = damp_min
                         damp_max = max(damp_min, damp_max)
@@ -948,15 +948,15 @@ with main_tabs[0]:  # CREATE DATASET TAB
                 st.write("**Length and Amplitude Ranges:**")
                 col1, col2 = st.columns(2)
                 with col1:
-                    length_min_text = st.text_input("Min/Fixed Length", "30", key="length_multi_min")
+                    length_min_text = st.text_input("Min/Fixed Length", "100", key="length_multi_min")
                     try:
                         length_min = int(length_min_text)
                         length_min = max(5, min(signal_length // 2, length_min))
                     except:
-                        length_min = 30
+                        length_min = 100
                 
                 with col2:
-                    length_max_text = st.text_input("Max Length", "30", key="length_multi_max")
+                    length_max_text = st.text_input("Max Length", "100", key="length_multi_max")
                     try:
                         length_max = int(length_max_text)
                         length_max = max(5, min(signal_length // 2, length_max))
@@ -969,7 +969,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                     amp_min_text = st.text_input("Min/Fixed Amplitude", "0.5", key="amplitude_multi_min")
                     try:
                         amp_min = float(amp_min_text)
-                        amp_min = max(0.1, amp_min)
+                        # amp_min = max(0.1, amp_min)
                     except:
                         amp_min = 0.5
                 
@@ -977,7 +977,7 @@ with main_tabs[0]:  # CREATE DATASET TAB
                     amp_max_text = st.text_input("Max Amplitude", "0.5", key="amplitude_multi_max")
                     try:
                         amp_max = float(amp_max_text)
-                        amp_max = max(0.1, amp_max)
+                        # amp_max = max(0.1, amp_max)
                     except:
                         amp_max = amp_min
                     amp_max = max(amp_min, amp_max)
@@ -1001,7 +1001,13 @@ with main_tabs[0]:  # CREATE DATASET TAB
                 st.write("**Batch Configuration:**")
                 col1, col2 = st.columns(2)
                 with col1:
-                    n_motifs_to_add = st.slider("Number of Motifs", 1, 20, 5, key="num_motifs_slider")
+                    n_motifs_to_add_text = st.text_input("Number of Motifs", "10", key="num_motifs")
+                    try:
+                        n_motifs_to_add = float(n_motifs_to_add_text)
+                        # amp_max = max(0.1, amp_max)
+                    except:
+                        n_motifs_to_add = 10
+                    # n_motifs_to_add = st.slider("Number of Motifs", 1, 20, 5, key="num_motifs_slider")
                 
                 with col2:
                     max_dim_offset = st.slider("Max Dimension Offset", 0, 50, 5, key="max_dim_offset_multi")
